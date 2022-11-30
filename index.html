@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guess Who!</title>
+
+	<!-- Bootstrap 5.2 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- header -->
+	<div class="intro py-3 my-5 bg-info text-center">
+		<div class="container">
+			<h2 class="text-white display-3 my-5 p-5">¿	Guess Who ?</h1>
+		</div>
+	</div>
+	<!-- question & answer container -->
+		<div class="container quiz py-4 bg-white">
+			<h2 class="p-5 text-black text-center">Name that face!</h2>
+			<!-- <p>We're 6 weeks in... yeah you can console log... yeah you can meme... but bro, can you put a name to a face?</p> -->
+			<form action="" class="quiz-form text-dark hide" id="quiz-form">
+				<!-- Picture & questions -->
+				<div class="my-5 student-profile-form">
+					<div class="profile	row justify-content-md-center"> <!--picture is too big here-->
+						<img src="" alt="Profile pic of student" width="300" id="hi">
+					</div>
+					<div class="answers-section col-sm-6">
+
+							<ul id="ultag"></ul>
+						
+							<!-- <input type="button" name="student-name" value="Student" class="option-1">
+							<!-- <label for="">Student A</label> -->
+						
+							<!-- <input type="button" name="student-name" value="Student" class="options" placeholder="student name">	 -->
+							<!-- <label class="form-check-label option" for="">name</label> -->
+						
+							<!-- <input type="button" name="student-name" value="Student" class="options"> -->
+							<!-- <label class="form-check-label option" for="">name</label> -->
+						
+							<!-- <input type="button" name="student-name" value="Student" class="options">
+							<label class="form-check-label option" for="">name</label> -->
+						
+						 <!--  -->
+					</div>
+					<div class="text-center">
+						<input type="submit" class="btn btn-info">
+					</div>
+				</div>
+			</form>
+			<!-- start game & next buttons -->
+			<div class="d-grid gap-2 col-6 mx-auto"	>
+				<button type="button" class="btn btn-info btn-start text-white p-3" id="btn-start" >START</button>
+				<button type="button" class="btn btn-info btn-next text-white p-3 hide">NEXT PICTURE</button>			
+			</div>
+			<!-- <div>
+				<button type="button" class="btn btn-info btn-easy text-white p-3 hide" id="btn-easy">START</button>
+				<button type="button" class="btn btn-info btn-intermediate text-white p-3 hide" id="btn-intermediate">NEXT PICTURE</button>
+				<button type="button" class="btn btn-info btn-hard text-white p-3 hide" id="btn-hard">NEXT PICTURE</button>				
+			</div> -->
+		</div>
+		
+	<!-- Script -->
+	<script src="students/students.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
